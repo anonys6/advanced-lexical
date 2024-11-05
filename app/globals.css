@@ -1676,6 +1676,10 @@ button.toolbar-item.active i {
   display: none;
 }
 
+.tree-view-output {
+  display: none;
+}
+
 @keyframes octocat-wave {
   0%,
   100% {
