@@ -6,12 +6,25 @@
  *
  */
 
-import {useLexicalComposerContext} from '@lexical/react/LexicalComposerContext';
-import {TreeView} from '@lexical/react/LexicalTreeView';
+import { useState, useEffect } from 'react';
+import { useLexicalComposerContext } from '@lexical/react/LexicalComposerContext';
+import { TreeView } from '@lexical/react/LexicalTreeView';
 import * as React from 'react';
 
 export default function TreeViewPlugin(): JSX.Element {
   const [editor] = useLexicalComposerContext();
+  const [isDomView, setIsDomView] = useState(true);
+
+  useEffect(() => {
+    if (isDomView) {
+      // Simulate a click on the "Export DOM" button to switch to the DOM view
+      const exportDomButton = document.querySelector('.debug-treetype-button');
+      if (exportDomButton) {
+        (exportDomButton as HTMLButtonElement).click();
+      }
+    }
+  }, [isDomView]);
+
   return (
     <TreeView
       viewClassName="tree-view-output"

@@ -1676,8 +1676,13 @@ button.toolbar-item.active i {
   display: none;
 }
 
+/* MAKING TREE-DOM VIEW ABSOLUTE SO IT GET RENDERED IN DOM AND WE CAN COPY HTML */
+
 .tree-view-output {
-  display: none;
+  display: block;
+  position: absolute;
+  height: 1px;
+  width: 1px;
 }
 
 @keyframes octocat-wave {

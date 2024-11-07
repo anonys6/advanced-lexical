@@ -153,17 +153,32 @@ export default function ActionsPlugin({
     });
   }, [editor]);
 
+  const copyHtmlToClipboard = useCallback(() => {
+    const treeViewOutput = document.querySelector('.tree-view-output');
+    if (treeViewOutput) {
+      const range = document.createRange();
+      range.selectNodeContents(treeViewOutput);
+      const selection = window.getSelection();
+      if (selection) {
+        selection.removeAllRanges();
+        selection.addRange(range);
+        document.execCommand('copy');
+        selection.removeAllRanges();
+      }
+    }
+  }, []);
+
   return (
     <div className="actions">
-      <button
+      {/* <button
         className="action-button import"
         onClick={() => importFile(editor)}
         title="Import"
         aria-label="Import editor state from JSON"
       >
         <i className="import" />
-      </button>
-      <button
+      </button> */}
+      {/* <button
         className="action-button export"
         onClick={() =>
           exportFile(editor, {
@@ -175,7 +190,7 @@ export default function ActionsPlugin({
         aria-label="Export editor state to JSON"
       >
         <i className="export" />
-      </button>
+      </button> */}
       <button
         className="action-button clear"
         disabled={isEditorEmpty}
@@ -210,6 +225,14 @@ export default function ActionsPlugin({
         aria-label="Convert from markdown"
       >
         <i className="markdown" />
+      </button>
+      <button
+        className="action-button"
+        onClick={copyHtmlToClipboard}
+        title="Copy HTML"
+        aria-label="Copy HTML"
+      >
+        <i className="copy" />
       </button>
       {isCollabActive && (
         <button
