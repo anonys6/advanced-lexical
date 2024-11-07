@@ -240,12 +240,10 @@ export default function ActionsPlugin({
           onClick={() => {
             editor.dispatchCommand(TOGGLE_CONNECT_COMMAND, !connected);
           }}
-          title={`${
-            connected ? "Disconnect" : "Connect"
-          } Collaborative Editing`}
-          aria-label={`${
-            connected ? "Disconnect from" : "Connect to"
-          } a collaborative editing server`}
+          title={`${connected ? "Disconnect" : "Connect"
+            } Collaborative Editing`}
+          aria-label={`${connected ? "Disconnect from" : "Connect to"
+            } a collaborative editing server`}
         >
           <i className={connected ? "disconnect" : "connect"} />
         </button>

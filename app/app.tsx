@@ -15,7 +15,6 @@ import { TableContext } from "@/components/editor/plugins/TablePlugin";
 import Settings from "@/components/editor/lib/Settings";
 import PlaygroundEditorTheme from "@/components/editor/themes/PlaygroundEditorTheme";
 import Editor from "@/components/editor/editor";
-import { getPrepopulatedRichText } from "@/components/editor/utils/getPrepopulatedRichText";
 
 export default function LexicalEditor(): JSX.Element {
   const {
@@ -23,7 +22,7 @@ export default function LexicalEditor(): JSX.Element {
   } = useSettings();
 
   const initialConfig = {
-    editorState: emptyEditor ? undefined : getPrepopulatedRichText,
+    editorState: emptyEditor ? undefined : undefined, // Remove prepopulated text
     namespace: "Playground",
     nodes: [...PlaygroundNodes],
     onError: (error: Error) => {
