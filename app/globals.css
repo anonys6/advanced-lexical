@@ -1672,6 +1672,10 @@ button.toolbar-item.active i {
   display: none;
 }
 
+#options-button {
+  display: none;
+}
+
 /* MAKING TREE-DOM VIEW ABSOLUTE SO IT GET RENDERED IN DOM AND WE CAN COPY HTML */
 
 .tree-view-output {
