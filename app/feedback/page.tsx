@@ -7,8 +7,12 @@ import axios from "axios";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 
-export default function Feedback({ title }) {
-  const siteKey = process.env.NEXT_PUBLIC_SITE_KEY;
+interface FeedbackProps {
+  title: string | undefined;
+}
+
+export default function Feedback({ title }: FeedbackProps) {
+  const siteKey = process.env.NEXT_PUBLIC_SITE_KEY || "";
   const BACKEND_URI = process.env.NEXT_PUBLIC_API_BASE_URL;
   const [recaptchaVerified, setRecaptchaVerified] = useState(false);
 
@@ -18,14 +22,14 @@ export default function Feedback({ title }) {
     feedback: "",
   });
 
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<{ [key: string]: string }>({});
 
   useEffect(() => {
     document.title = `${title} - Advanced Text Editor`;
     window.scrollTo(0, 0);
   }, [title]);
 
-  const handleChange = (e) => {
+  const handleChange = (e: { target: { name: any; value: any } }) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
@@ -33,7 +37,7 @@ export default function Feedback({ title }) {
   };
 
   const validateForm = () => {
-    const newErrors = {};
+    const newErrors: { [key: string]: string } = {};
     if (!formData.name || formData.name.length > 50) {
       newErrors.name =
         "Name is required and should be less than 50 characters.";
@@ -54,11 +58,11 @@ export default function Feedback({ title }) {
     return newErrors;
   };
 
-  const handleRecaptchaChange = (value) => {
+  const handleRecaptchaChange = (value: any) => {
     setRecaptchaVerified(!!value);
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
     const validationErrors = validateForm();
@@ -135,7 +139,7 @@ export default function Feedback({ title }) {
                 onChange={handleChange}
                 className="w-full px-4 py-2 border rounded-lg text-gray-900 focus:outline-none focus:border-blue-500"
                 placeholder="Your feedback"
-                rows="4"
+                rows={4}
                 required
               ></textarea>
               {errors.feedback && (
