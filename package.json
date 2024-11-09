@@ -16,6 +16,7 @@
     "@types/jsdom": "^21.1.6",
     "@types/katex": "^0.16.7",
     "@types/lodash-es": "^4.17.12",
+    "axios": "^1.7.7",
     "jsdom": "^23.2.0",
     "katex": "^0.16.9",
     "lexical": "^0.12.5",
@@ -25,6 +26,7 @@
     "prettier": "^3.1.1",
     "react": "^18",
     "react-dom": "^18",
+    "react-google-recaptcha": "^3.1.0",
     "y-websocket": "^1.5.1"
   },
   "devDependencies": {

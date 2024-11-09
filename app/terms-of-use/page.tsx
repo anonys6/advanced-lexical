@@ -26,9 +26,9 @@ export default function TermsOfUse() {
               the website. Our website is offered to your acceptance without
               modification of all of the terms and conditions contained herein
               and all other operating rules, policies (including, without
-              limitation, AdvancedTextEditor.com's Privacy Policy), and
+              limitation, AdvancedTextEditor.com&apos;s Privacy Policy), and
               procedures that may be published from time to time by
-              AdvancedTextEditor.com (collectively, the "Agreement").
+              AdvancedTextEditor.com (collectively, the &quot;Agreement&quot;).
             </p>
 
             <h2>1. Terms</h2>
@@ -44,8 +44,9 @@ export default function TermsOfUse() {
             <h2>2. Use License</h2>
             <p>
               Permission is granted to temporarily download one copy of the
-              materials (information or software) on AdvancedTextEditor.com's
-              website for personal, non-commercial transitory viewing only.
+              materials (information or software) on
+              AdvancedTextEditor.com&apos;s website for personal, non-commercial
+              transitory viewing only.
             </p>
             <p>You may not:</p>
             <ul>
@@ -56,15 +57,15 @@ export default function TermsOfUse() {
               </li>
               <li>
                 Attempt to decompile or reverse engineer any software contained
-                on AdvancedTextEditor.com's website.
+                on AdvancedTextEditor.com&apos;s website.
               </li>
               <li>
                 Remove any copyright or other proprietary notations from the
                 materials.
               </li>
               <li>
-                Transfer the materials to another person or "mirror" the
-                materials on any other server.
+                Transfer the materials to another person or &quot;mirror&quot;
+                the materials on any other server.
               </li>
             </ul>
             <p>
@@ -75,13 +76,13 @@ export default function TermsOfUse() {
 
             <h2>3. Disclaimer</h2>
             <p>
-              The materials on AdvancedTextEditor.com's website are provided "as
-              is". AdvancedTextEditor.com makes no warranties, expressed or
-              implied, and hereby disclaims and negates all other warranties
-              including, without limitation, implied warranties or conditions of
-              merchantability, fitness for a particular purpose, or
-              non-infringement of intellectual property or other violation of
-              rights.
+              The materials on AdvancedTextEditor.com&apos;s website are
+              provided &quot;as is&quot;. AdvancedTextEditor.com makes no
+              warranties, expressed or implied, and hereby disclaims and negates
+              all other warranties including, without limitation, implied
+              warranties or conditions of merchantability, fitness for a
+              particular purpose, or non-infringement of intellectual property
+              or other violation of rights.
             </p>
 
             <h2>4. Limitations</h2>
@@ -90,15 +91,15 @@ export default function TermsOfUse() {
               liable for any damages (including, without limitation, damages for
               loss of data or profit, or due to business interruption) arising
               out of the use or inability to use the materials on
-              AdvancedTextEditor.com's website, even if AdvancedTextEditor.com
-              or an authorized representative has been notified orally or in
-              writing of the possibility of such damage.
+              AdvancedTextEditor.com&apos;s website, even if
+              AdvancedTextEditor.com or an authorized representative has been
+              notified orally or in writing of the possibility of such damage.
             </p>
 
             <h2>5. Revisions and Errata</h2>
             <p>
-              The materials appearing on AdvancedTextEditor.com's website could
-              include technical, typographical, or photographic errors.
+              The materials appearing on AdvancedTextEditor.com&apos;s website
+              could include technical, typographical, or photographic errors.
               AdvancedTextEditor.com does not warrant that any of the materials
               on its website are accurate, complete, or current.
               AdvancedTextEditor.com may make changes to the materials contained
@@ -113,7 +114,7 @@ export default function TermsOfUse() {
               its website and is not responsible for the contents of any such
               linked site. The inclusion of any link does not imply endorsement
               by AdvancedTextEditor.com of the site. Use of any such linked
-              website is at the user's own risk.
+              website is at the user&apos;s own risk.
             </p>
 
             <h2>7. Site Terms of Use Modifications</h2>
@@ -126,9 +127,9 @@ export default function TermsOfUse() {
 
             <h2>8. Governing Law</h2>
             <p>
-              Any claim relating to AdvancedTextEditor.com's website shall be
-              governed by the laws of the State without regard to its conflict
-              of law provisions.
+              Any claim relating to AdvancedTextEditor.com&apos;s website shall
+              be governed by the laws of the State without regard to its
+              conflict of law provisions.
             </p>
 
             <p>

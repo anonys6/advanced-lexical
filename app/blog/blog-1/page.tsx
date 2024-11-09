@@ -25,7 +25,7 @@ export default function BlogPost() {
               Back to Articles
             </Link>
             <h1 className="text-4xl md:text-5xl font-bold mb-4">
-              The Future of Web Development: What's Next After React?
+              The Future of Web Development: What&apos;s Next After React?
             </h1>
             <div className="flex flex-wrap items-center gap-6 text-sm">
               <span className="flex items-center">
@@ -77,8 +77,8 @@ export default function BlogPost() {
           </p>
 
           <blockquote>
-            "The web platform is evolving to provide native solutions for
-            problems we've been solving with JavaScript frameworks."
+            &quot;The web platform is evolving to provide native solutions for
+            problems we&apos;ve been solving with JavaScript frameworks.&quot;
           </blockquote>
 
           <h2>The Impact of AI on Development</h2>

@@ -143,9 +143,9 @@ export default function PrivacyPolicy() {
             <p>
               We may update this Privacy Policy periodically to reflect changes
               in our practices or for legal reasons. Any updates will be posted
-              on this page with an updated "Effective Date." We encourage you to
-              review this Privacy Policy regularly to stay informed about how we
-              protect your information.
+              on this page with an updated &quot;Effective Date.&quot; We
+              encourage you to review this Privacy Policy regularly to stay
+              informed about how we protect your information.
             </p>
 
             <h2>9. Contact Us</h2>

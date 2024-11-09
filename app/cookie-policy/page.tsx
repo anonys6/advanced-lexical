@@ -66,13 +66,14 @@ export default function CookiePolicy() {
               <li>
                 <strong>Performance Cookies:</strong> These cookies help us
                 understand how users interact with the website by collecting
-                anonymous usage data. This allows us to optimize the site's
+                anonymous usage data. This allows us to optimize the site&apos;s
                 performance and improve user experience.
               </li>
               <li>
                 <strong>Analytics Cookies:</strong> These cookies track visitor
                 behavior to help us analyze how users use the site. We use this
-                data to improve the site's functionality and user experience.
+                data to improve the site&apos;s functionality and user
+                experience.
               </li>
             </ul>
 
