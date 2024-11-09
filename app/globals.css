@@ -5,6 +5,35 @@
  * LICENSE file in the root directory of this source tree.
  *
  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased;
+  }
+}
+
+.prose {
+  @apply max-w-none;
+}
+
+.prose h2 {
+  @apply text-2xl font-bold text-gray-900 mt-8 mb-4;
+}
+
+.prose p {
+  @apply text-gray-600 mb-6 leading-relaxed;
+}
+
+.prose ul {
+  @apply list-disc list-inside text-gray-600 mb-6 space-y-2;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-600 pl-4 italic text-gray-700 my-6;
+}
 
 @import "https://fonts.googleapis.com/css?family=Reenie+Beanie";
 
@@ -19,44 +48,19 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #eee;
-  padding: 0 20px;
-}
-
-header {
-  max-width: 580px;
-  margin: auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-}
-
-header a {
-  max-width: 220px;
-  margin: 20px 0 0 0;
-  display: block;
-}
-
-header img {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-
-header h1 {
-  text-align: left;
-  color: #333;
-  display: inline-block;
-  margin: 20px 0 0 0;
+  padding: 0;
 }
 
 .editor-shell {
-  margin: 20px auto;
+  margin: 20px 0;
   border-radius: 2px;
   max-width: 1100px;
   color: #000;
   position: relative;
   line-height: 1.7;
   font-weight: 400;
+  padding: 0 20px;
+  display: grid;
 }
 
 .editor-shell .editor-container {
@@ -190,7 +194,7 @@ pre::-webkit-scrollbar-thumb {
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.test-recorder-button+.test-recorder-button {
+.test-recorder-button + .test-recorder-button {
   margin-left: 4px;
 }
 
@@ -1591,20 +1595,24 @@ button.toolbar-item.active i {
 
 .sticky-note.yellow {
   border-top: 1px solid #fdfd86;
-  background: linear-gradient(135deg,
-      #ffff88 81%,
-      #ffff88 82%,
-      #ffff88 82%,
-      #ffffc6 100%);
+  background: linear-gradient(
+    135deg,
+    #ffff88 81%,
+    #ffff88 82%,
+    #ffff88 82%,
+    #ffffc6 100%
+  );
 }
 
 .sticky-note.pink {
   border-top: 1px solid #e7d1e4;
-  background: linear-gradient(135deg,
-      #f7cbe8 81%,
-      #f7cbe8 82%,
-      #f7cbe8 82%,
-      #e7bfe1 100%);
+  background: linear-gradient(
+    135deg,
+    #f7cbe8 81%,
+    #f7cbe8 82%,
+    #f7cbe8 82%,
+    #e7bfe1 100%
+  );
 }
 
 .sticky-note-container.dragging {
@@ -1686,7 +1694,6 @@ button.toolbar-item.active i {
 }
 
 @keyframes octocat-wave {
-
   0%,
   100% {
     transform: rotate(0);
