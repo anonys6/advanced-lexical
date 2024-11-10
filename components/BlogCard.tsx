@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { ArrowRight, Clock, User } from 'lucide-react';
-import { BlogPost } from '@/app/types';
+import { BlogPos
 
 export function BlogCard({ post }: { post: BlogPost }) {
   return (
