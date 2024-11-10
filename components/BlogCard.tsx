@@ -6,7 +6,7 @@ import { BlogPost } from "@/app/types/blogPost";
 export function BlogCard({ post }: { post: BlogPost }) {
   return (
     <article className="bg-white rounded-lg shadow-lg overflow-hidden transform transition duration-300 hover:scale-[1.02]">
-      <Link href={`/blog/${post.id}`}>
+      <Link href={`/blog/blog-1`}>
         <div className="relative h-48">
           <Image
             src={post.image}

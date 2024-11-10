@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export function Hero() {
   return (
@@ -9,13 +9,13 @@ export function Hero() {
           src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=2070"
           alt="Blog Hero"
           fill
-          className="object-cover"
+          className="object-cover blur-[10px]"
           priority
         />
       </div>
       <div className="relative z-10 text-center px-4">
-        <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-          Welcome to DevInsights
+        <h1 className="text-4xl md:text-6xl font-bold text-blue-500 mb-6 drop-shadow-lg">
+          Advanced Text Editor Blogs
         </h1>
         <p className="text-xl text-gray-100 max-w-2xl mx-auto">
           Exploring the latest in web development, programming, and technology
