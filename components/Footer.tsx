@@ -63,20 +63,22 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-          <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Contact</h4>
+          <div className="flex flex-col gap-4">
             <ul className="space-y-2">
+              <h4 className="text-lg font-semibold text-white">Contact</h4>
               <li>
                 <Link href="/feedback" className="hover:text-white transition">
                   Feedback Form
                 </Link>
               </li>
             </ul>
-            <p className="text-gray-400">
-              Email: contact@devinsights.com
-              <br />
-              Follow us on Twitter @devinsights
-            </p>
+
+            <div className="bg-white py-2 px-3 rounded-md">
+
+              <p className="text-gray-900">
+                Email: <Link href="mailto:hello@advancedtexteditor.com">hello@advancedtexteditor.com</Link>
+              </p>
+            </div>
           </div>
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
