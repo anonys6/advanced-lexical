@@ -1,7 +1,7 @@
-import Image from 'next/image';
-import Link from 'next/link';
-import { ArrowRight, Clock, User } from 'lucide-react';
-import { BlogPos
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight, Clock, User } from "lucide-react";
+import { BlogPost } from "@/app/types/blogPost";
 
 export function BlogCard({ post }: { post: BlogPost }) {
   return (
@@ -19,12 +19,8 @@ export function BlogCard({ post }: { post: BlogPost }) {
           </div>
         </div>
         <div className="p-6">
-          <h3 className="text-xl font-bold text-gray-900 mb-3">
-            {post.title}
-          </h3>
-          <p className="text-gray-600 mb-4">
-            {post.excerpt}
-          </p>
+          <h3 className="text-xl font-bold text-gray-900 mb-3">{post.title}</h3>
+          <p className="text-gray-600 mb-4">{post.excerpt}</p>
           <div className="flex items-center justify-between text-sm text-gray-500">
             <div className="flex items-center space-x-4">
               <span className="flex items-center">
