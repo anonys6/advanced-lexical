@@ -28,6 +28,7 @@ export const metadata: Metadata = {
     "robots": "index, follow",
     "keywords": "text editor, online text editor, free text editor, advanced text editor",
   },
+  metadataBase: new URL("https://advancedtexteditor.com/"),
 };
 
 export default function RootLayout({
