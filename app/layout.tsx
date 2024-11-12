@@ -5,6 +5,8 @@ import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 import Script from "next/script";
 import Header from "@/components/Header";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 export const metadata: Metadata = {
   title: "Advanced Text Editor: Edit Your Plain Text Online for FREE",
@@ -90,6 +92,8 @@ export default function RootLayout({
         {children}
 
         <Footer />
+        <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );
