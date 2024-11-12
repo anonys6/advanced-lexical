@@ -1,5 +1,28 @@
 import Link from "next/link";
 
+const resources = [
+  {
+    title: "Playground CSS",
+    link: "/resources/PlaygroundEditorTheme.css",
+    desc: "(CSS for Editor theme)",
+  },
+  {
+    title: "KaTeX CSS",
+    link: "/resources/katex.min.css",
+    desc: "(CSS for KaTeX)",
+  },
+  {
+    title: "KaTeX JS",
+    link: "/resources/katex.min.js",
+    desc: "(JS for KaTeX)",
+  },
+  {
+    title: "Excalidraw JS",
+    link: "/resources/excalidraw.production.min.js",
+    desc: "(JS for Excalidraw)",
+  }
+]
+
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-gray-300">
@@ -13,17 +36,28 @@ const Footer = () => {
               Edit Your Plain Text Online for FREE
             </p>
 
-            <div className="mt-4">
-              <p>Playground CSS:
-                <Link href="/css/PlaygroundEditorTheme.css" className="text-blue-500 hover:underline ml-2" target="_blank">
-                  View&nbsp;
-                </Link>
-                |
-                <a href="/css/PlaygroundEditorTheme.css" className="text-blue-500 hover:underline ml-2" download>
-                  Download
-                </a>
-              </p>
-              <p className="text-gray-400 text-sm">(link with HTML for style)</p>
+            <div className="mt-4 flex flex-col gap-1">
+
+              {
+                resources.map((resource, index) => (
+                  <div key={index}>
+                    <p className="flex justify-between">{resource.title}:
+                      <span>
+
+                        <Link href={resource.link} className="text-blue-500 hover:underline ml-2" target="_blank">
+                          View&nbsp;&nbsp;
+                        </Link>
+                        |
+                        <a href={resource.link} className="text-blue-500 hover:underline ml-2" download>
+                          Download
+                        </a>
+                      </span>
+                    </p>
+                    <p className="text-gray-400 text-sm">{resource.desc}</p>
+                  </div>
+                ))
+              }
+
             </div>
           </div>
           <div>
