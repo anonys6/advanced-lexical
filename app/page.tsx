@@ -1,12 +1,13 @@
+import Info from "@/components/Info";
 import dynamic from "next/dynamic";
-import { Logo } from "./logo";
 const LexicalEditor = dynamic(() => import("./app"), { ssr: false });
 
 export default function Page() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between ">
+    <main className="flex min-h-screen flex-col items-center justify-between pb-6">
       <LexicalEditor />
-      <Logo />
+
+      <Info />
     </main>
   );
 }
