@@ -12,6 +12,19 @@ const Footer = () => {
             <p className="text-gray-400">
               Edit Your Plain Text Online for FREE
             </p>
+
+            <div className="mt-4">
+              <p>Playground CSS:
+                <Link href="/css/PlaygroundEditorTheme.css" className="text-blue-500 hover:underline ml-2" target="_blank">
+                  View&nbsp;
+                </Link>
+                |
+                <a href="/css/PlaygroundEditorTheme.css" className="text-blue-500 hover:underline ml-2" download>
+                  Download
+                </a>
+              </p>
+              <p className="text-gray-400 text-sm">(link with HTML for style)</p>
+            </div>
           </div>
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">
