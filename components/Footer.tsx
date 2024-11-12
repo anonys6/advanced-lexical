@@ -10,8 +10,7 @@ const Footer = () => {
               Advanced Text Editor
             </h3>
             <p className="text-gray-400">
-              Exploring the latest in web development, programming, and
-              technology.
+              Edit Your Plain Text Online for FREE
             </p>
           </div>
           <div>
