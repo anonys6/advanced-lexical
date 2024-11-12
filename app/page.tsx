@@ -7,7 +7,10 @@ export default function Page() {
     <main className="flex min-h-screen flex-col items-center justify-between pb-6">
       <LexicalEditor />
 
-      <Info />
+      <div className="px-5">
+
+        <Info />
+      </div>
     </main>
   );
 }

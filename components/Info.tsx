@@ -3,7 +3,7 @@ import RatingRadio from './RatingRadio';
 
 const Info = () => {
     return (
-        <div className="flex h-[400px] overflow-y-scroll bg-white w-[1010px] rounded-b-lg flex-col gap-2 p-8">
+        <div className="flex h-[400px] md:p-9 overflow-y-scroll bg-white max-w-[1010px] rounded-b-lg flex-col gap-2 p-4">
             <h2 className="text-2xl font-bold mb-4">Advanced Text Editor: Edit Your Plain Text Online for FREE</h2>
             <p>In today&apos;s digital landscape, having a reliable and versatile text editor is essential. Whether you&apos;re writing an essay, coding, or drafting a blog post, the Advanced Text Editor is your free online solution for all your text editing needs.</p>
 
