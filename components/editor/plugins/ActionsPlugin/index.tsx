@@ -31,6 +31,8 @@ import { useCallback, useEffect, useState } from "react";
 import useModal from "../../hooks/useModal";
 import Button from "../../ui/Button";
 import { PLAYGROUND_TRANSFORMERS } from "../MarkdownTransformers";
+import { FileCode2, FileText } from "lucide-react";
+import { BsFiletypeHtml } from "react-icons/bs";
 
 async function sendEditorState(editor: LexicalEditor): Promise<void> {
   const stringifiedEditorState = JSON.stringify(editor.getEditorState());
@@ -227,12 +229,16 @@ export default function ActionsPlugin({
         <i className="markdown" />
       </button>
       <button
-        className="action-button"
+        className="action-button flex items-center justify-center"
         onClick={copyHtmlToClipboard}
         title="Copy HTML"
         aria-label="Copy HTML"
       >
-        <i className="copy" />
+        <BsFiletypeHtml
+          size={24}
+          className="bg-contain inline-block h-5 w-5"
+        />
+        {/* <BsFiletypeTxt /> */}
       </button>
       {isCollabActive && (
         <button
