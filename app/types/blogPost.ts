@@ -8,4 +8,5 @@ export type BlogPost = {
   readTime: string;
   image: string;
   category: string;
+  slug: string;
 };

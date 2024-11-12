@@ -1,38 +1,55 @@
+import image1 from "@/assets/editing-tools.jpg";
+import image2 from "@/assets/editor.jpg";
+import image3 from "@/assets/laptop-table.jpg";
+import image4 from "@/assets/man-writing-abc.jpg";
+
 export const blogPosts = [
   {
     id: 1,
-    title: "The Future of Web Development: What's Next After React?",
+    title: "Sentence Case Converter Online | How It Works?",
     excerpt:
-      "Exploring the emerging technologies and frameworks that might shape the future of web development...",
-    author: "Md Saqib",
-    date: "Mar 28, 2024",
-    readTime: "6 min read",
-    image:
-      "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=2070",
-    category: "Technology",
+      "Transform text to sentence case online with ease. Paste your content, and our tool adjusts capitalization to ensure proper sentence structure.",
+    author: "Admin",
+    date: "Nov 10, 2024",
+    readTime: "7 min read",
+    image: image1.src,
+    category: "Writing",
+    slug: "how-sentence-case-converter-works",
   },
   {
     id: 2,
-    title: "Mastering TypeScript: Advanced Patterns and Best Practices",
+    title: "Title Case Converter Online | How It Works?",
     excerpt:
-      "Deep dive into TypeScript's advanced features and how to leverage them in your projects...",
-    author: "Michael Roberts",
-    date: "Mar 25, 2024",
-    readTime: "8 min read",
-    image:
-      "https://images.unsplash.com/photo-1619410283995-43d9134e7656?q=80&w=2070",
-    category: "Programming",
+      "Convert text to title case online effortlessly. Simply paste your text, and our tool automatically capitalizes titles for a polished, professional look.",
+    author: "Admin",
+    date: "Nov 10, 2024",
+    readTime: "7 min read",
+    image: image2.src,
+    category: "Writing",
+    slug: "how-title-case-converter-works",
   },
   {
     id: 3,
-    title: "Building Scalable Applications with Microservices",
+    title: "Top 5 Plain Text Editing Tools Online for Free [Advanced]",
     excerpt:
-      "Learn how to design and implement microservices architecture for modern applications...",
-    author: "David Kim",
-    date: "Mar 22, 2024",
-    readTime: "10 min read",
-    image:
-      "https://images.unsplash.com/photo-1618477388954-7852f32655ec?q=80&w=2070",
-    category: "Architecture",
+      "Explore the top 5 free online advanced text editing tools for plain text, perfect for working professionals, freelancers, students, SEO work, and more.",
+    author: "Admin",
+    date: "Nov 10, 2024",
+    readTime: "7 min read",
+    image: image3.src,
+    category: "Text Editing",
+    slug: "top-5-text-editing-tools",
+  },
+  {
+    id: 4,
+    title: "Top 5 Online Text Editing Features in Advanced Text Editor",
+    excerpt:
+      "Use our free online text editing features and edit your content like never before. Discover and make your editing task fast using Advanced Text Editor.",
+    author: "Admin",
+    date: "Nov 10, 2024",
+    readTime: "7 min read",
+    image: image4.src,
+    category: "Text Editing",
+    slug: "top-text-editing-features",
   },
 ];
