@@ -281,6 +281,7 @@
   padding: 0;
   margin: 0;
   list-style-position: inside;
+  list-style: decimal;
 }
 .PlaygroundEditorTheme__ol2 {
   padding: 0;
@@ -310,6 +311,7 @@
   padding: 0;
   margin: 0;
   list-style-position: inside;
+  list-style: disc;
 }
 .PlaygroundEditorTheme__listItem {
   margin: 0 32px;
