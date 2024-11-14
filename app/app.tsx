@@ -37,7 +37,7 @@ export default function LexicalEditor(): JSX.Element {
         <SharedHistoryContext>
           <TableContext>
             <SharedAutocompleteContext>
-              <div className="editor-shell">
+              <div className="editor-shell drop-shadow-md">
                 <Editor />
               </div>
               <Settings />
