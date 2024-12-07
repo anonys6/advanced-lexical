@@ -32,7 +32,8 @@ import useModal from "../../hooks/useModal";
 import Button from "../../ui/Button";
 import { PLAYGROUND_TRANSFORMERS } from "../MarkdownTransformers";
 import { FileCode2, FileText } from "lucide-react";
-import { BsFiletypeHtml } from "react-icons/bs";
+import { BsFiletypeHtml, BsFiletypeTxt } from "react-icons/bs";
+import { $generateHtmlFromNodes } from '@lexical/html';
 
 async function sendEditorState(editor: LexicalEditor): Promise<void> {
   const stringifiedEditorState = JSON.stringify(editor.getEditorState());
@@ -155,6 +156,40 @@ export default function ActionsPlugin({
     });
   }, [editor]);
 
+  const copyFormattedText = useCallback(() => {
+    editor.getEditorState().read(() => {
+      const htmlString = $generateHtmlFromNodes(editor);
+
+      // Create temporary element to handle the copying
+      const tempDiv = document.createElement('div');
+      tempDiv.innerHTML = htmlString;
+      document.body.appendChild(tempDiv);
+
+      // Create clipboard data
+      const data = new DataTransfer();
+      data.setData('text/html', htmlString);
+      data.setData('text/plain', editor.getRootElement()?.textContent || '');
+
+      try {
+        // Select the content
+        const range = document.createRange();
+        range.selectNodeContents(tempDiv);
+        const selection = window.getSelection();
+        if (selection) {
+          selection.removeAllRanges();
+          selection.addRange(range);
+
+          // Execute copy command
+          document.execCommand('copy');
+          selection.removeAllRanges();
+        }
+      } finally {
+        // Clean up
+        document.body.removeChild(tempDiv);
+      }
+    });
+  }, [editor]);
+
   const copyHtmlToClipboard = useCallback(() => {
     const treeViewOutput = document.querySelector('.tree-view-output');
     if (treeViewOutput) {
@@ -228,6 +263,7 @@ export default function ActionsPlugin({
       >
         <i className="markdown" />
       </button>
+
       <button
         className="action-button flex items-center justify-center"
         onClick={copyHtmlToClipboard}
@@ -240,6 +276,19 @@ export default function ActionsPlugin({
         />
         {/* <BsFiletypeTxt /> */}
       </button>
+
+      <button
+        className="action-button flex items-center justify-center"
+        onClick={copyFormattedText}
+        title="Copy Formatted Text"
+        aria-label="Copy text with formatting"
+      >
+        <BsFiletypeTxt
+          size={24}
+          className="bg-contain inline-block h-5 w-5"
+        />
+      </button>
+
       {isCollabActive && (
         <button
           className="action-button connect"
