@@ -50,6 +50,14 @@ export default function RootLayout({
       </head>
       <body>
         <GoogleAnalytics />
+        {/* Google AdSense Script */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+          strategy="afterInteractive"
+          data-ad-client="ca-pub-5978239879706356"
+          crossOrigin="anonymous"
+        />
         {/* Metadata script */}
         <Script type="application/ld+json" id="json-ld">
           {`
@@ -91,11 +99,11 @@ export default function RootLayout({
 
         {children}
 
-        
+
         <Footer />
         <Analytics />
         <SpeedInsights />
       </body>
-    </html>
+    </html >
   );
 }
