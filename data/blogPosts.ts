@@ -2,6 +2,7 @@ import image1 from "@/assets/editing-tools.jpg";
 import image2 from "@/assets/editor.jpg";
 import image3 from "@/assets/laptop-table.jpg";
 import image4 from "@/assets/man-writing-abc.jpg";
+import image5 from "@/assets/font-evolution.jpg";
 
 export const blogPosts = [
   {
@@ -52,4 +53,15 @@ export const blogPosts = [
     category: "Text Editing",
     slug: "top-text-editing-features",
   },
+  {
+    id: 5,
+    title: "The Evolution of Online Text Editing: Trends to Watch in 2025",
+    excerpt: "Discover the latest trends in online text editing and how they are shaping the future of content creation and editing in 2025.",
+    author: "Admin",
+    date: "Dec 23, 2024",
+    readTime: "6 min read",
+    image: image5.src,
+    category: "Text Editing",
+    slug: "the-evolution-of-online-text-editing",
+  }
 ];
