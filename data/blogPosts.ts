@@ -63,5 +63,16 @@ export const blogPosts = [
     image: image5.src,
     category: "Text Editing",
     slug: "the-evolution-of-online-text-editing",
+  },
+  {
+    id: 6,
+    title: "Lexical: The Next-Generation Text Editor That's Actually Free",
+    excerpt: "Lexical is a free, next-generation text editor that offers a wide range of features for writers, bloggers, and students. Learn more about Lexical here.",
+    author: "Admin",
+    date: "Dec 24, 2024",
+    readTime: "6 min read",
+    image: image1.src,
+    category: "Text Editing",
+    slug: "why-lexical-is-best",
   }
 ];
