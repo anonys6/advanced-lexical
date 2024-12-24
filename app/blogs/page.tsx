@@ -2,6 +2,12 @@ import { Hero } from '../../components/Hero';
 import { BlogCard } from '../../components/BlogCard';
 import { Newsletter } from '../../components/Newsletter';
 import { blogPosts } from '../../data/blogPosts';
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Blog | Advanced Text Editor",
+  description: "Explore articles about text editing, writing tips, and more",
+};
 
 export default function BlogHome() {
   return (
