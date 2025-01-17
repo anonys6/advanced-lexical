@@ -31,7 +31,6 @@ import { useCallback, useEffect, useState } from "react";
 import useModal from "../../hooks/useModal";
 import Button from "../../ui/Button";
 import { PLAYGROUND_TRANSFORMERS } from "../MarkdownTransformers";
-import { FileCode2, FileText } from "lucide-react";
 import { BsFiletypeHtml, BsFiletypeTxt } from "react-icons/bs";
 import { $generateHtmlFromNodes } from '@lexical/html';
 
