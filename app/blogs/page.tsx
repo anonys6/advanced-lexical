@@ -5,7 +5,7 @@ import { blogPosts } from '../../data/blogPosts';
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | Advanced Text Editor",
+  title: "Blogs | Advanced Text Editor",
   description: "Explore articles about text editing, writing tips, and more",
 };
 

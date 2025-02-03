@@ -52,10 +52,10 @@ const Header = () => {
                         Home
                     </Link>
                     <Link href="/blogs" className="text-gray-600 text-lg hover:text-gray-900">
-                        Blog
+                        Blogs
                     </Link>
-                    <Link href="/privacy" className="text-gray-600 text-lg hover:text-gray-900">
-                        Privacy
+                    <Link href="/privacy-policy" className="text-gray-600 text-lg hover:text-gray-900">
+                        Privacy Policy
                     </Link>
                 </div>
             </nav>
